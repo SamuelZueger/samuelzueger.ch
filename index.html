@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samuel Züger</title>
+  <meta name="description" content="Persönliche Seite von Samuel Züger.">
+  <style>
+    :root {
+      --bg: #faf9f6;
+      --text: #1c1c1a;
+      --muted: #6b6a66;
+      --line: #dcdad4;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141413;
+        --text: #ecebe7;
+        --muted: #9a9892;
+        --line: #33322f;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; }
+    html { height: 100%; }
+    body {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 48px 24px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      width: 100%;
+      max-width: 34rem;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: clamp(2.2rem, 7vw, 3.4rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+    .rule {
+      width: 3rem;
+      height: 1px;
+      background: var(--text);
+      margin: 1.75rem 0;
+    }
+    p {
+      font-size: 1.125rem;
+      color: var(--muted);
+      max-width: 28rem;
+    }
+    footer {
+      max-width: 34rem;
+      width: 100%;
+      margin: 4rem auto 0;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Samuel Züger</h1>
+    <div class="rule"></div>
+
+    <!-- PLATZHALTER: ein, zwei Sätze über dich -->
+    <p>Hier steht bald ein kurzer Satz darüber, wer ich bin und was ich mache.</p>
+  </main>
+
+  <footer>© <span id="y">2026</span> Samuel Züger</footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
